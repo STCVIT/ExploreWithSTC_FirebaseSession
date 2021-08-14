@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>STCPay</title>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li onclick="window.location.href='login.html'">STC Pay</li>
+            <li id="left"><img src ="STC.svg" id="logo"></li>
+            <li><button onclick="window.location.href='login.html'">Log In</button></li>
+            <li><button onclick="window.location.href='index.html'">Sign Up</button></li>
+        </ul>
+        <hr>
+    </div>
+    <div class="mainsection">
+        <img src="Group 1.svg" id="pay"> 
+        <div class="left_part">
+        <h1>Log In</h1>
+        <form id="form">
+            <div class="input_one">
+                <label>Email Address</label><br>
+                <input id="email_add" type="text" required>
+            </div>
+            <div class="input_two">
+                <label>Password</label><br>
+                <input id="pass" type="password" required>
+            </div>
+            <button onclick="login()">Log In</button>
+        </form>
+        </div>
+    </div>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBc2On0APkLuNU4Yaa3azMaiA0xyk-89js",
+            authDomain: "stcdryrun3.firebaseapp.com",
+            projectId: "stcdryrun3",
+            storageBucket: "stcdryrun3.appspot.com",
+            messagingSenderId: "148436928182",
+            appId: "1:148436928182:web:f33bba9513e6d2167e0817"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        </script>
+    <script src="./index.js"></script>
+</body>
+</html>
